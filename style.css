@@ -2894,12 +2894,11 @@ div.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
 }
 
 .font-xlarges {
-	
 	line-height: 50px;
 	font-family: 'DM Sans', 'bold';
 	font-style: normal;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 25px;
 	letter-spacing: 0.02em;
 	margin-top: -4.5%;
 	color: #3F4957;
