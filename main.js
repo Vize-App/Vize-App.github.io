@@ -44,7 +44,6 @@ function updateHeadshots(newBioIndex = 0) {
 }
 
 window.addEventListener('load', (event) => {
-    console.log('page has loaded...')
     // set all background images for headshots
     updateHeadshots();
 });
