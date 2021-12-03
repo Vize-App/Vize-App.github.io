@@ -1,0 +1,723 @@
+@font-face { 
+    font-family: 'DM Sans Regular'; 
+    src: url('./fonts/DMSans-Regular.ttf'); 
+}
+
+@font-face { 
+    font-family: 'DM Sans Bold'; 
+    src: url('./fonts/DMSans-Bold.ttf'); 
+} 
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+html {
+    display: block;
+    font-family: 'DM Sans Regular';
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: linear-gradient(180deg, #EDF0FF 0%, #FFFFFF 48.3%, #EEF1FF 100%);
+    width: 100%;
+    height: auto;
+}
+
+.header > .content {
+    /* Applying to college can be tough. It doesn’t have to be. Hi, we’re VIZE. We can help. */
+    position: absolute;
+    width: 585px;
+    height: 213px;
+    left: 351px;
+    top: 499px;
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: justify;
+    color: #545454;
+}
+
+nav {
+    padding: 41px 87px 127px 87px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 67px;
+}
+
+nav > .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+nav > .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav > .menu > .links {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav > .menu > .links > li > a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+nav > .menu > .links > li {
+    display: inline-block;
+    margin: 0 36px;
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #545454;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero > .col > .content {
+    font-family: 'DM Sans Regular';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0em;
+    margin-top: 24px;
+}
+
+.spacer-lg {
+    width: 194px;
+}
+
+.spacer-med {
+    width: 132px;
+}
+
+.spacer-sm {
+    width: 24px;
+    height: 100%;
+}
+
+.vertical-spacer {
+    height: 156px;
+    width: 100%;
+}
+
+.vertical-spacer-sm {
+    height: 68px;
+    width: 100%;
+}
+
+.m2 {
+    height: 36px;
+    width: 100%;
+}
+
+.m1 {
+    height: 24px;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-align {
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.hero > .col.graphic {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -29px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 'bold';
+    font-family: 'DM Sans Bold';
+    font-size: 55px;
+    line-height: 72px;
+    color: #000;
+    margin: 12px 0;
+}
+
+.purple-text {
+    color: #4561E1;
+}
+
+.counseling.content {
+    margin-left: 132px;
+}
+
+.about-content {
+    margin-left: 132px;
+}
+
+.team-content {
+    margin-left: 132px;
+}
+
+.newsletter-content {
+    margin-left: 132px;
+    position: relative;
+    z-index: 3;
+}
+
+.about-content > p, .help-content > p, .counseling > p, .counseling > p, .news-content > p {
+    font-family: 'DM Sans Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+    margin: 12px 0;
+}
+
+.help-content {
+    max-width: 40%;
+}
+
+.action-btn {
+    background: linear-gradient(180deg, #455FE8 0%, #7187F7 100%);
+    box-shadow: 0px 3px 25px rgba(129, 136, 166, 0.14);
+    border-radius: 60px;
+    max-width: 200px;
+    padding: 19px 0;
+    text-align: center;
+}
+
+.action-btn:hover {
+    cursor: pointer;
+}
+
+.action-btn > span {
+    font-family: 'DM Sans Regular';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.icon {
+    height: 122px;
+    width: 122px;
+    background: #EDF1FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-row {
+    display: flex;
+}
+
+.inner-row.counseling {
+    width: 785px;
+    justify-content: space-between;
+}
+
+.inner-col {
+    width: 215px;
+}
+
+.inner-col > h3 {
+    font-family: 'DM Sans Regular';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.number {
+    height: 46px;
+    width: 41px;
+    position: relative;
+    text-align: center;
+}
+
+.number > h3 {
+    font-family: 'DM Sans Regular';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    margin: 24px 0 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.number > span.underline {
+    background: #E0E5FF;
+    width: 100%;
+    height: 6px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 9px;
+}
+
+p > .bolded {
+    font-family: 'DM Sans Bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bio > h4 {
+    color: #1F1F1F;
+    font-family: 'DM Sans Bold';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 9px;
+}
+
+.bio > h5 {
+    color: #455FE8;
+    font-family: 'DM Sans Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.bio.active {
+    display: block;
+}
+
+.bio.hidden {
+    display: none;
+}
+
+.bio > p {
+    font-family: 'DM Sans Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+}
+
+.team-content-images {
+    position: relative;
+}
+
+.team-content-images > .logo {
+    position: absolute;
+    z-index: 3;
+    top: 230px;
+    right: 268px;
+}
+
+.team-content-images > .background {
+    position: relative;
+    z-index: 1
+}
+
+.m0 {
+    margin: 0;
+}
+
+/* potentially need to change this to css from svg */
+.indicators {
+    display: flex;
+}
+
+.indicators > .prev {
+    margin-left: -24px;
+}
+
+.indicators > .next, .indicators > .prev {
+    width: 86px;
+    cursor: pointer;
+}
+
+.headshots > div {
+    z-index: 2;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.headshots > div > img.responsive {
+    width: 100%;
+}
+
+.headshots > .first {
+    width: 326px;
+    height: 326px;
+    top: 65px;
+    right: 346px;
+    border: 6px solid #455FE8;
+}
+
+.headshots > .second {
+    width: 215px;
+    height: 215px;
+    top: 52px;
+    right: 60px;
+}
+
+.headshots > .third {
+    width: 235px;
+    height: 235px;
+    top: 285px;
+    right: 30px;
+}
+
+.headshot-image {
+    transition: background 0.7s ease-in-out;
+}
+
+.newsletter {
+    width: 698px;
+    /* height: 486px; */
+    background: #FFFFFF;
+    box-shadow: 0px 3px 25px rgba(129, 136, 166, 0.14);
+    border-radius: 12px;
+    padding: 51px 64px;
+    position: relative;
+    z-index: 3;
+}
+
+.newsletter > h5 {
+    margin: 0;
+    font-size: 35px;
+    color: #1F1F1F;
+    line-height: 46px;
+    font-family: 'DM Sans Regular';
+}
+
+#corner-circle {
+    position: absolute;
+    bottom: -64px;
+    right: -64px;
+    z-index: 1;
+}
+
+.terms-and-service {
+    margin-left: 36px;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 28px;
+    background: #FFFFFF;
+    border: 2px solid #4561E1;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 25px rgba(129, 136, 166, 0.14);
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkmark:hover {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #455FE8;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.terms-text {
+    font-weight: 400;
+    font-family: 'DM Sans Regular';
+    line-height: 21px;
+    font-size: 16px;
+    color: #545454;
+    position: absolute;
+    top: 3px;
+    left: 45px;
+}
+
+.terms-text > a {
+    text-decoration: none;
+}
+
+.link.bold-purple {
+    font-weight: bold;
+    font-family: 'DM Sans Bold';
+    color: #455FE8;
+}
+
+.sign-up-margin {
+    margin-top: 24px;
+    height: 66px;
+}
+
+input[type=email] {
+    margin-top: 17px;
+    padding-left: 4%;
+    position: relative;
+    width: 96%;
+    background-image: url('./images/mail-icon.svg');
+    background-position: calc(100% - 24px) calc(50%);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 25px rgba(129, 136, 166, 0.14);
+    border-radius: 60px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #8188A6;
+    border: none;
+}
+
+label[for="email"] {
+    font-size: 20px;
+    font-family: 'DM Sans Regular';
+    line-height: 26px;
+    color: #545454;
+    margin-left: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    border: none;
+    background: #DCE0F3;
+    margin-top: 135px;
+}
+
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 166px;
+}
+
+footer > .left-col, footer > .right-col {
+    display: flex;
+    align-items: center;
+}
+
+footer > .left-col > span, footer > .left-col > a {
+    margin-left: 32px;
+    font-family: 'DM Sans Regular';
+    font-size: 20px;
+    line-height: 35px;
+    color: #545454;
+    text-decoration: none;
+}
+
+footer > .right-col > span {
+    font-family: 'DM Sans Regular';
+    font-size: 20px;
+    line-height: 20px;
+    color: #545454;
+    margin-left: 12px;
+}
+
+.jumplink {
+    position: relative;
+    top: -24px;
+}
+
+.clickable > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.message {
+    position: relative;
+}
+
+.message > p {
+    font-family: 'DM Sans Regular';
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+}
+
+.message > p:last-child {
+    margin-bottom: 16px;
+}
+
+.messaging {
+    border-left: 2px solid #455FE8;
+    margin-bottom: 24px;
+    padding: 0 0 0 24px;
+}
+
+#success-message > p {
+    color: #657df3;
+}
+
+#error-message > p {
+    color: #ff5c5c;
+}
+
+.hide-message {
+    display: none;
+}
+
+.show-message {
+    display: block;
+}
+
+.disabled-btn, .disabled-btn > span {
+    background: grey;
+    color: #f2f2f2;
+}
+
+.disabled-btn.loading > span {
+    display: none;
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+         transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+.spinner {
+    opacity: 0;
+    position: relative;
+    transition: opacity linear 0.1s;
+    display: none;
+}
+
+.disabled-btn.loading > .spinner {
+    height: 24px;
+    opacity: 1;
+    position: relative;
+    transition: opacity linear 0.1s;
+    display: block;
+}
+
+.spinner::before {
+    animation: .75s linear infinite spinner;
+    border: solid 3px #eee;
+    border-bottom-color: #455FE8;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    left: 50%;
+    opacity: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform-origin: center;
+    width: 40px;
+    will-change: transform;
+}
+
+.headshot-name {
+    background: rgba(201, 211, 231, 0.4);
+    backdrop-filter: blur(11.0916px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 19px;
+    left: 16px;
+    padding: 7px 22px 7px 22px;
+}
+
+.headshot-name > span {
+    font-family: 'DM Sans Bold';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.headshot-name.active > span {
+    line-height: 26px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.headshot-name.active {
+    padding: 10px 26px 10px 26px;
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+        max-width: 80%;
+    }
+}
