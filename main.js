@@ -46,7 +46,7 @@ function updateHeadshots(newBioIndex = 0) {
 window.addEventListener('load', (event) => {
     // set all background images for headshots
     updateHeadshots();
-    console.log('test deploy...')
+    console.log('test deploy......')
 });
 
 async function fetchWithTimeout(resource, options = {}) {
