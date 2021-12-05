@@ -45,8 +45,7 @@ function updateHeadshots(newBioIndex = 0) {
 
 window.addEventListener('load', (event) => {
     // set all background images for headshots
-    updateHeadshots();
-    console.log('test deploy......')
+    // updateHeadshots();
 });
 
 async function fetchWithTimeout(resource, options = {}) {
@@ -138,12 +137,39 @@ function submitEmail() {
     });
 }
 
+function updateActiveHeadShot(currentIndex = 0) {
+    let headshots = [
+        {
+            name: 'Eyal Lavian',
+            imageSrc: eyalHeadshotSrc,
+        },
+        {
+            name: 'Jeremy Bourdon',
+            imageSrc: jeremyHeadshotSrc,
+        },
+        {
+            name: 'Alex Rindone',
+            imageSrc: alexHeadshotSrc,
+        },
+    ];
+
+    let currentHeadshot = headshots[currentIndex];
+
+    let headshotEl = document.querySelector("#headshotImage");
+    let headshotTag = document.querySelector("#headshotTag");
+    headshotEl.style['background-image'] = "url(" + currentHeadshot.imageSrc + ")";
+    headshotTag.innerText = currentHeadshot.name;
+}
+
 function toggleBios(direction) {
+    console.log(direction)
     let ACTIVE = 'active';
     let HIDDEN = 'hidden';
     let NEXT = 'next';
     let PREVIOUS = 'prev';
-    let bios = document.querySelectorAll(".bio");
+    // let bios = document.querySelectorAll(".bio");
+    let bios = document.querySelectorAll("#bio-columns > .col")
+    console.log(bios)
     let currentBioIndex;
     let newBioIndex;
     
@@ -173,5 +199,24 @@ function toggleBios(direction) {
         bios[currentBioIndex].classList.add(HIDDEN);
     }
 
-    updateHeadshots(newBioIndex);
+    updateActiveHeadShot(newBioIndex);
+
+    // updateHeadshots(newBioIndex);
 }
+
+function toggleMobileMenu() {
+    let menuContainer = document.querySelector(".mobile-menu");
+    if (menuContainer.classList.contains('hidden')) {
+        menuContainer.classList.remove('hidden');
+    } else {
+        menuContainer.classList.add('hidden');
+    }
+}
+
+// function toggleNewBios() {
+//     let bios = document.querySelector("#bios-columns");
+//     let currentSelectedBioIndex = bios.findIndex(bio => {
+//         !bio.classList.contains('hidden');
+//     }
+//     let newCurrentSelectedBioIndex = current
+// }
