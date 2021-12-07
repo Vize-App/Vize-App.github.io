@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css?v=1.1">
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Todo">
@@ -29,7 +29,7 @@
         <nav>
             <div class="logo">
                 <img class="image-logo" src="images/logo.svg" />
-                <img class="text-logo" src="images/logo-text.svg" />           
+                <img class="text-logo hide-on-lg" src="images/logo-text.svg" />           
             </div>
             <div class="menu-icon" onclick="toggleMobileMenu();">
                 <img src="images/menu-icon.svg" />
@@ -93,12 +93,12 @@
         <div id="help-new">
             <h2>How VIZE Can <span class="purple-text">Help</span></h2>
             <div class="col">
-                <div class="row">
+                <div class="row hide-on-lg">
                     <div class="col">
                         <p class="boils-down">College counseling really boils down to three things:</p>
                     </div>
                 </div>
-                <div class="row flex-row">
+                <div id="college-counseling-card" class="row flex-row">
                     <div class="col">
                         <div class="icon-container">
                             <img src="images/bell-icon.svg" />  
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row flex-row">
+                <div id="help-read-more" class="row flex-row">
                     <div class="col">
                         <p>There’s a lot of stuff to do along the path to college, but fortunately, we’re here to help with all of it.</p>
                         <p>When VIZE launches in Spring 2022, our web application will help you manage every single one of the hundreds of things to do along your path to college. We’ll keep you on track with <span class="bolded">what</span> to do, <span class="bolded">when</span> to do it, and <span class="bolded">how</span>.</p>

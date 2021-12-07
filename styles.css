@@ -1314,3 +1314,130 @@ footer > .right-col > span {
     margin-top: -50px;
     visibility: hidden;
 }
+
+@media screen and (min-width: 1440px){
+    nav {
+        background: none;
+        box-shadow: none;
+    }
+
+    .hide-on-lg {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding-top: 24px;
+        position: inherit;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav > .menu {
+        margin-right: 32px;
+    }
+
+    nav > .menu > .links > li {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0 0 0 40px;
+    }
+
+    nav > .logo > .image-logo {
+        height: 44px;
+    }
+
+    .hero {
+        padding-top: 72px;
+    }
+
+    .hero > .graphic > img {
+        max-width: 530px;
+    }
+
+    .hero > .col.graphic {
+        margin-bottom: -23px;
+    }
+
+    .hero > .col {
+        align-items: flex-start;
+    }
+
+    .hero > .col > .content {
+        text-align: justify;
+        font-size: 34px;
+        line-height: 167%;
+    }
+
+    .hero > .col > .logo {
+        max-width: 300px;
+    }
+    
+    #about-new > .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #about-new > .row > .col > img {
+        max-width: 714px;
+    }
+
+    #about-new > .row > .col:first-child,
+    #newsletter-new > .row > .col:first-child {
+        margin-right: 64px;
+    }
+
+    #college-counseling-card {
+        /* max-width: 50%; */
+        background-color: #fff;
+        padding: 43px 35px;
+        box-shadow: 0px 3px 25px rgb(129 136 166 / 14%);
+        border-radius: 12px;
+    }
+
+    #help-read-more {
+        margin-right: 84px;
+    }
+
+    #help-read-more > .col > div > .action-btn {
+        margin: 0;
+    }
+
+    #help-new > .col {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #newsletter-new > .row {
+        align-items: center; 
+    }
+
+    #newsletter-new > .row,
+    #about-new > .row,
+    #help-new > .col,
+    #team-new > .row {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    #footer-new {
+        max-width: 1200px;
+        padding: 24px 0;
+    }
+
+    #footer-new > .row > .col {
+        flex: 1;
+        max-width: 43%;
+        justify-content: center;
+    }
+
+    #footer-new > .row > .col > .copyright-container > img {
+        max-width: 66px;
+    }
+
+    #footer-new > .row > .col > .copyright-container > span, 
+    #footer-new > .row > .col > .copyright-container > a,
+    #footer-new > .row > .col > .help-container > a {
+        font-size: 18px;
+    }
+}
