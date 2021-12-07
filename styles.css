@@ -38,8 +38,8 @@ html {
 
 .mobile-menu > ul {
     list-style: none;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     color: #545454;
     padding-left: 12px;
 }
@@ -192,16 +192,17 @@ nav > .logo > .text-logo {
 
 #about-new > h2, #help-new > h2, #team-new > h2, #newsletter-new > h2  {
     font-size: 32px;
-    margin-top: 38px;
+    margin-top: 22px;
 }
 
 .about-content > p, .help-content > p, .counseling > p, .counseling > p, .news-content > p {
     font-family: 'DM Sans Regular';
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 160%;
     color: #545454;
     margin: 12px 0;
+    text-align: justify;
 }
 
 .main-content-mobile > #about-new > .col.about-content.left-align {
@@ -324,7 +325,7 @@ nav > .logo > .text-logo {
 
 p.role {
     color: #455FE8!important;
-    font-family: 'DM Sans Bold';
+    font-family: 'DM Sans Regular';
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
@@ -444,6 +445,12 @@ p.bio {
 #help-new > .col > .row > .col > p {
     font-size: 14px;
     line-height: 24px;
+    line-height: 171%;
+    text-align: justify;
+}
+
+#help-new > .col > .row > .col > p:first-child {
+    margin-top: 0;
 }
 
 #newsletter-new > .row > .col > p {
@@ -452,6 +459,11 @@ p.bio {
     font-size: 14px;
     line-height: 24px;
     color: #3F4957;
+    text-align: justify;
+}
+
+#newsletter-new > .row > .col > p:first-child {
+    margin-top: 0px;
 }
 
 #newsletter-new > .row > .col > p > span.bolded {
