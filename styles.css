@@ -51,7 +51,17 @@ html {
 .mobile-menu > ul > li > a {
     text-decoration: none;
     color: #545454;
-} 
+}
+
+.hide-on-med-and-down {
+    display: none;
+}
+
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
 
 .header {
     background: linear-gradient(180deg, #EDF0FF 0%, #FFFFFF 48.3%, #EEF1FF 100%);
@@ -193,6 +203,10 @@ nav > .logo > .text-logo {
 #about-new > h2, #help-new > h2, #team-new > h2, #newsletter-new > h2  {
     font-size: 32px;
     margin-top: 22px;
+}
+
+#newsletter-new > h2 {
+    margin-bottom: 0px;
 }
 
 .about-content > p, .help-content > p, .counseling > p, .counseling > p, .news-content > p {
@@ -404,7 +418,7 @@ p.bio {
     }
 
     .col.active {
-        margin-right: 24px;
+        margin-right: 48px;
     }
 }
 
@@ -468,7 +482,7 @@ p.bio {
     text-align: justify;
 }
 
-#newsletter-new > .row > .col > p:first-child {
+#newsletter-new > .row > .col > p:first-of-type {
     margin-top: 0px;
 }
 
@@ -506,7 +520,7 @@ p.bio {
     }
     
     #newsletter-new > .row > .col:first-child {
-        margin-right: 24px;
+        margin-right: 48px;
     }
 }
 
@@ -667,10 +681,9 @@ p.bio {
         text-align: justify;
     }
 
-    .main-content-mobile {
-        /* weird jump issue 24px right necessary? */
+    /* .main-content-mobile {
         margin: 12px 0px 0 0px;
-    }
+    } */
 
     .hero > .triangle {
         top: 51%;
@@ -981,7 +994,7 @@ h2 {
     right: 30px;
 }
 
-.headshot-image {
+.headshot-image, .photo {
     transition: background 0.7s ease-in-out;
 }
 
@@ -1315,7 +1328,27 @@ footer > .right-col > span {
     visibility: hidden;
 }
 
+@media screen and (min-width: 1024px) {
+    .main-content-mobile {
+        max-width: 900px;
+        margin: 0 auto!important;
+    }
+
+    #newsletter-new > .row,
+    #about-new > .row,
+    #help-new > .col,
+    #team-new > .row {
+        /* margin: 0 auto; */
+        max-width: 900px;
+    }
+}
+
 @media screen and (min-width: 1440px){
+    .main-content-mobile {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     nav {
         background: none;
         box-shadow: none;
@@ -1393,6 +1426,12 @@ footer > .right-col > span {
         padding: 43px 35px;
         box-shadow: 0px 3px 25px rgb(129 136 166 / 14%);
         border-radius: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #college-counseling-card > p {
+        margin: 0 0 24px 12px;
     }
 
     #help-read-more {
@@ -1439,5 +1478,47 @@ footer > .right-col > span {
     #footer-new > .row > .col > .copyright-container > a,
     #footer-new > .row > .col > .help-container > a {
         font-size: 18px;
+    }
+
+    h2 {
+        font-size: 48px!important;
+        line-height: 62px!important;
+    }
+
+    #about-new, 
+    #help-new, 
+    #team-new, 
+    #newsletter-new {
+        margin-top: 100px;
+    }
+
+    #team-new > h2 {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .hide-on-med-and-down {
+        display: block;
+    }
+
+    .row.flex-row > .col {
+        flex: 1;
+    }
+
+    #newsletter-new > .row > .col > .newsletter-card > h4 {
+        text-align: left;
+        margin-left: 24px;
+    }
+
+    #newsletter-new > .row > .col > .newsletter-card {
+        padding: 14px 60px;
+    }
+
+    [id]::before {
+        /* content: '';
+        display: block; */
+        height: 25px;
+        margin-top: -25px;
+        visibility: hidden;
     }
 }
