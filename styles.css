@@ -230,14 +230,16 @@ nav > .logo > .text-logo {
 .row > .col > .description > p {
     font-family: 'DM Sans Regular';
     font-weight: normal;
-    font-size: 12px;
-    line-height: 22px;
     color: #3F4957;
 }
 
 .row > .col > .description > p > span.bolded {
     font-family: 'DM Sans Bold';
     font-weight: 700;
+}
+
+.row > .col > .description > p,
+.row > .col > .description > span.bolded {
     font-size: 12px;
     line-height: 22px;
 }
@@ -261,10 +263,10 @@ nav > .logo > .text-logo {
 }
 
 @media screen and (min-width: 1024px) {
-    .row > .col > .description > p,
-    .row > .col > .description > p > span.bolded {
-        font-size: 24px;
-        line-height: 36px;
+    #help-new > .col > .row > .col > .description > p,
+    #help-new > .col > .row > .col > .description > p > span.bolded {
+        font-size: 16px;
+        line-height: 187%;
     }
 
     .icon-container {
@@ -378,10 +380,14 @@ p.bio {
         font-size: 28px;
         line-height: 36px;
     }
-    p.role,
+    p.role {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
     p.bio {
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 34px;
     }
 
     #team-new > .row:first-of-type {
@@ -476,8 +482,8 @@ p.bio {
 @media screen and (min-width: 1024px) {
     #newsletter-new > .row > .col > p,
     #newsletter-new > .row > .col > p > span.bolded {
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
 
@@ -627,9 +633,13 @@ p.bio {
     }
 
     .hero > .col > .content {
-        font-size: 32px;
+        font-size: 24px;
         letter-spacing: 0em;
         margin-top: 24px;
+    }
+
+    .hero > .col > .logo {
+        max-width: 180px;
     }
 
     .hero > .col.center-align {
@@ -647,13 +657,14 @@ p.bio {
     p > .bolded {
         font-family: 'DM Sans Bold';
         font-weight: 700;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 187%;
     }
 
     .about-content > p, .help-content > p, .counseling > p, .counseling > p, .news-content > p {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 167%;
+        text-align: justify;
     }
 
     .main-content-mobile {
@@ -671,8 +682,8 @@ p.bio {
     }
 
     #help-new > .col > .row > .col > p {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 187%;
     }
 }
 
