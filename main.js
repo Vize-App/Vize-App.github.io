@@ -1,4 +1,4 @@
-let eyalHeadshotSrc = './images/eyal_headshot.jpeg';
+let eyalHeadshotSrc = './images/eyal_headshot.png';
 let eyalName = 'Eyal Lavian';
 let jeremyName = 'Jeremy Bourdon';
 let alexName = 'Alex Rindone';
